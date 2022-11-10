@@ -1,17 +1,16 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+import userRouter from "./controllers/v1/User";
 
 dotenv.config();
 
 const app: Express = express();
 
-app.get('/', (req: Request, res: Response) => {
-    res.send("Hola mundo");
-})
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hola mundo");
+});
 
-app.get('/user', (req: Request, res: Response) => {
-    res.send("Usuarios");
-})
+app.use("/user", userRouter);
 
 const port = process.env.PORT;
 const host = process.env.HOST;
