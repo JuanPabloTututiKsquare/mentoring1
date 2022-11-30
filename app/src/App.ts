@@ -14,11 +14,13 @@ const DB_PASSWORD = process.env.DB_PASS!;
 // * Express Instance
 const app: Express = express();
 
+app.use(express.json());
+
 // * API Routes
 app.use("/user", userRouter);
 
 try {
-  const initSequelize = async() => {DBConnection({db_name: DB_NAME, db_username: DB_USER, db_password: DB_PASSWORD, db_host: HOST})};
+  const initSequelize = async() => {await DBConnection({db_name: DB_NAME, db_username: DB_USER, db_password: DB_PASSWORD, db_host: HOST})};
   initSequelize()
   .then(() => {
     console.log("Connection to DB was successful!");
