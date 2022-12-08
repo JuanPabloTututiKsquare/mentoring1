@@ -1,3 +1,4 @@
+import { ENUM } from "sequelize";
 import {
   CreationOptional,
   DataTypes,
