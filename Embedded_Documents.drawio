@@ -1,27 +1,67 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.0">
   <diagram name="Page-1" id="87Kx6tzCwKI8SDA6-ivv">
-    <mxGraphModel>
+    <mxGraphModel dx="1320" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" value="Incoming Files" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="8" y="8" width="162" height="54" as="geometry" />
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-6" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="290" width="40" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Embeddings" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="31" y="112" width="115" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="ChromaDB" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="37" y="216" width="104" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="5" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-10" value="&lt;br&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 9px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&quot;I need all documents related to Scott Thomas&lt;/span&gt;&quot;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;fontColor=default;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-6" target="vocC7EJsjnnwuwwBJ_hf-11">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
+            <mxPoint x="146.87999999999988" y="370.5899999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-11" target="vocC7EJsjnnwuwwBJ_hf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-11" value="User Question" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="150" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-12" target="vocC7EJsjnnwuwwBJ_hf-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-12" value="Embedding Model" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-14" value="Embedding Model" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="150" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-16" target="vocC7EJsjnnwuwwBJ_hf-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-16" value="Chroma" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="135" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-17" value="Query" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-14" target="vocC7EJsjnnwuwwBJ_hf-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-20" target="vocC7EJsjnnwuwwBJ_hf-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-20" value="Query results&lt;br&gt;(Context)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="300" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-23" target="vocC7EJsjnnwuwwBJ_hf-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-23" value="Augmented&lt;br&gt;Prompt&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="420" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-25" target="vocC7EJsjnnwuwwBJ_hf-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-25" value="LLM Analysis" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="420" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-29" value="This are the related documents&lt;br&gt;LoanCheque.docx&lt;br&gt;Balance.xls" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vocC7EJsjnnwuwwBJ_hf-27">
+          <mxGeometry x="-0.1603" relative="1" as="geometry">
+            <mxPoint x="60" y="410" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="vocC7EJsjnnwuwwBJ_hf-27" value="Output" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="420" width="90" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
